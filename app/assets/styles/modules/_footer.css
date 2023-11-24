@@ -1,0 +1,66 @@
+footer {
+    background: url('./assets/images/2.jpg') no-repeat center;
+    background-size: cover;
+    color: #D2AC47;
+    padding-top: 1rem;
+    @mixin atMedium {
+        padding-top: 4rem;
+    }
+}
+
+.footer {
+    display: block;
+    text-align: center;
+
+    @mixin atMedium {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__logo {
+        width: 200px;
+        margin: 0 auto 1.5rem auto; 
+        @mixin atMedium {
+            width: 320px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-around;   
+        align-items: center;
+        flex-direction: column;
+        @mixin atMedium {
+            align-items: flex-start;
+            flex-direction: row;
+        }
+        @mixin forSmall {
+            margin-top: 2rem;
+        }
+    }
+}
+
+.footer > div {
+    margin-top: 2.5rem;
+    @mixin atMedium {
+        margin-top: 0;
+    }
+}
+
+.footer > div > span {
+    margin: 1rem 0;
+}
+
+.footer-text {
+    text-align: center;
+    padding: 20px 5px 5px 5px;
+}
+
+.fa-clr {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.inner-footer {
+    background: linear-gradient(45deg, $maroon, $black, $black, $maroon);
+}
